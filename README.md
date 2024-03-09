@@ -6,7 +6,6 @@ The ASU Food Bank webpage is designed to provide information and resources for A
 ## Table of Contents
 - [Features](#features)
 - [Usage](#usage)
-- [Customization](#customization)
 
 ## Features
 ### 1. Responsive Design
@@ -23,10 +22,3 @@ The navigation bar provides easy access to different sections of the webpage, in
 
 ## Usage
 The webpage is intended for use by Arizona State University students, staff, and anyone interested in supporting or utilizing the ASU Food Bank services.
-
-## Customization
-To customize the webpage for your specific needs, consider the following:
-
-- **Logo and Branding:** Replace the ASU Food Bank logo and branding with your organization's branding.
-- **Content:** Modify the text content to reflect specific information about your food bank or organization.
-- **Contact Information:** Update the contact details in the footer with your organization's address, hours, email, and phone number.
