@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Inventory</title>
+  <style>
+    body {
+      background-image: url('https://res.cloudinary.com/dcqpetbru/image/upload/v1709931667/Background_rczpjk.webp');
+      padding-top: 56px;
+    }
+
+    .navbar {
+      background-color: #ffffff !important;
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #8C1D40 !important;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #8C1D40;
+    }
+
+    .inventory-container {
+      max-width: 600px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .table {
+      border-collapse: separate;
+      border-radius: 15px; /* Adjust the value to your preference for rounded corners */
+      overflow: hidden;
+    }
+
+    .table th,
+    .table td {
+      border: 2px solid #8C1D40; /* ASU maroon color */
+    }
+
+    .table th {
+      background-color: #ffd180;
+      color: black;
+      text-align: center;
+    }
+
+    .table td {
+      background-color: #ffd180;
+      color: black;
+      text-align: center;
+    }
+
+    .food-item,
+    .availability,
+    .in-stock,
+    .out-of-stock {
+      border: none;
+    }
+
+    .availability {
+      background-color: whitesmoke;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .out-of-stock {
+  background-color: #dc3545 !important;
+  color: #ffffff;
+}
+
+.in-stock {
+  background-color: #28a745 !important;
+  color: #ffffff;
+}
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708734886/ASU_Sparky_Logo_hh4jts.jpg"
+               alt="ASU Food Bank" width="30" height="24">
+        </a>
+      </div>
+    </nav>
+    <a class="navbar-brand" href="#"><span class="text-warning">ASU </span>Food Bank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Loginpage.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Donationspage.html">Donations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container inventory-container">
+  <h2 class="text-center mb-4">Browse our Inventory</h2>
+
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col" class="food-item">Food Item</th>
+      <th scope="col" class="availability">Availability</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="food-item">Milk</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Bread</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Carrots</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Spinach</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Onions</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Tomatoes</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Bell Peppers</td>
+      <td class="out-of-stock availability">Out of Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Yogurt</td>
+      <td class="in-stock availability">In Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Beetroot</td>
+      <td class="out-of-stock availability">Out of Stock</td>
+    </tr>
+    <tr>
+      <td class="food-item">Cereals</td>
+      <td class="out-of-stock availability">Out of Stock</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

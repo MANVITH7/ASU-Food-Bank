@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Virtual Walk-In Line</title>
+  <style>
+    body {
+      background-image: url('https://res.cloudinary.com/dcqpetbru/image/upload/v1709931667/Background_rczpjk.webp');
+      padding-top: 56px;
+    }
+
+    .navbar {
+      background-color: #ffffff !important;
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #8C1D40 !important; 
+    }
+
+    .navbar-toggler-icon {
+      background-color: #8C1D40;
+    }
+
+    .list-group {
+      border-radius: 15px; /* Adjust the value to your preference for rounded corners */
+    }
+
+    .list-group-item {
+      background-color: #ffd180;
+      color: black; 
+    }
+
+    .list-group-item:hover {
+      background-color: #FDE295; 
+    }
+
+    .line-container {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      border: 2px solid #8C1D40; /* ASU maroon color */
+      border-radius: 15px; /* Adjust the value to your preference for rounded corners */
+      overflow: hidden;
+    }
+
+    .virtual-walk-in-text {
+      text-align: center;
+      margin-bottom: 10px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708734886/ASU_Sparky_Logo_hh4jts.jpg"
+               alt="ASU Food Bank" width="30" height="24">
+        </a>
+      </div>
+    </nav>
+    <a class="navbar-brand" href="#"><span class="text-warning">ASU </span>Food Bank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Loginpage.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Donationspage.html">Donations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4 virtual-walk-in-text">Virtual Walk-In Line</h2>
+
+  <div class="line-container">
+    <ul class="list-group" id="walkInList">
+      
+    </ul>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // Function to update the walk-in list every 10 minutes
+  function updateWalkInList() {
+    // Names of people without appointments
+    const walkInNames = ['Person 1', 'Person 2', 'Person 3', 'Person 4', 'Person 5', 'Person 6'];
+
+    // Get the list container
+    const walkInList = document.getElementById('walkInList');
+
+    // Clear existing list items
+    walkInList.innerHTML = '';
+
+    // Add new list items with refreshed names
+    walkInNames.forEach((name) => {
+      const listItem = document.createElement('li');
+      listItem.className = 'list-group-item';
+      listItem.textContent = name;
+      walkInList.appendChild(listItem);
+    });
+  }
+
+  updateWalkInList();
+
+  // Set interval to update the list every 10 minutes (600,000 milliseconds)
+  setInterval(updateWalkInList, 600000);
+
+  // Function to skip a person every 10 seconds
+  setInterval(skipPerson, 10000);
+
+  function skipPerson() {
+    const walkInList = document.getElementById('walkInList');
+    const firstPerson = walkInList.firstChild;
+    if (firstPerson) {
+      walkInList.removeChild(firstPerson);
+    }
+  }
+</script>
+
+</body>
+</html>

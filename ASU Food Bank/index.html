@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASU Food Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: url('https://res.cloudinary.com/dcqpetbru/image/upload/v1709931667/Background_rczpjk.webp');
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #ffffff !important;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #8C1D40 !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #8C1D40;
+        }
+
+        .card {
+            background-color: whitesmoke;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 275px;
+        }
+
+        .card-img-top-main {
+            height: 700px;
+        }
+
+        .btn-warning {
+            background-color: #8C1D40;
+            color: white;
+            width: 150px;
+            height: 42px;
+            border-radius: 50px;
+        }
+
+        .card-title {
+            color: black;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .card-text {
+            color: black;
+        }
+
+        .highlight-heading {
+            background-color: #8C1D40;
+            color: white;
+            font-weight: bold;
+            font-size: 1.8rem;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .contact-card {
+            background-color: whitesmoke;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+
+        .hoverable-card:hover {
+            transition: transform 0.3s ease-in-out;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: auto;
+            background-color: whitesmoke;
+            color: black;
+            text-align: left;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+
+        .border-asu-gold {
+            border: 2px solid #ffd180;
+            border-radius: 15px;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html">
+                        <img
+                            src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708734886/ASU_Sparky_Logo_hh4jts.jpg"
+                            alt="ASU Food Bank" width="30" height="24">
+                    </a>
+                </div>
+            </nav>
+            <a class="navbar-brand" href="#"><span class="text-warning">ASU </span>Food Bank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Loginpage.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donationspage.html">Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="card mb-3 no-hover border-asu-gold">
+            <img src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708738360/Pantry-3_hck74k.jpg"
+                class="card-img-top-main" alt="Food Bank">
+            <div class="card-body">
+                <div class="highlight-heading text-center">What is ASU Food Bank about?</div>
+                <p class="card-text">The ASU Food Bank, accessible to all Arizona State University students with a valid student ID, stands as a vital resource combating food insecurity among the student body. Offering a diverse array of essentials, including fresh fruits, vegetables, various breads, proteins, canned goods, and nonperishable items, the initiative is dedicated to providing free access to nutritious food while fostering a supportive environment for those facing challenges related to food security. This comprehensive approach ensures that students with different dietary needs can access sustenance, enabling them to focus on their academic and personal growth without the burden of hunger.</p>
+
+                    <p>Beyond tangible provisions, the ASU Food Bank embodies a commitment to unity and care within the campus community. It serves as a symbol of shared responsibility, where volunteers and staff work tirelessly to create an atmosphere of respect and understanding. By reinforcing the idea that seeking assistance is not a sign of weakness but a mutual investment in each other's success, the initiative aims to build a brighter, healthier future for every Sun Devil, fostering a campus culture where no student goes hungry.</p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5 flex-container">
+            <div class="col">
+                <div class="card no-hover hoverable-card border-asu-gold">
+                    <img
+                        src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708738374/Schedule_an_Appointment_czcm1l.webp"
+                        class="card-img-top" alt="Schedule an Appointment">
+                    <div class="card-body">
+                        <h5 class="card-title">Schedule an Appointment</h5>
+                        <p class="card-text">You should make arrangements to pick up the food from the food bank at a
+                            time that is convenient for you.</p>
+                        <p><a href="appointmentPage.html" class="btn btn-warning mt-3">Schedule Now</a> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card no-hover hoverable-card border-asu-gold">
+                    <img
+                        src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708800744/Screenshot_2024-02-24_at_11.51.39_AM_yqekvh.png"
+                        class="card-img-top" alt="Virtual Line">
+                    <div class="card-body">
+                        <h5 class="card-title">Join our Virtual Walk-In Line</h5>
+                        <p class="card-text">Join our virtual line and wait your turn to receive food from the food
+                            bank.</p>
+                        <p><a href="Virtual_line.html" class="btn btn-warning mt-3">Join Now</a> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card no-hover hoverable-card border-asu-gold">
+                    <img
+                        src="https://res.cloudinary.com/dcqpetbru/image/upload/v1708738357/Pantry-2_a10c86.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Browse our Inventory</h5>
+                        <p class="card-text">To find out what food items are required, please review our food
+                            inventory.</p>
+                        <p><a href="Inventory.html" class="btn btn-warning mt-3">Browse Now</a> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card mb-3 mt-5 no-hover border-asu-gold">
+            <div class="card-body">
+                <div class="highlight-heading text-center">How the Food Bank Works:</div>
+                <ul>
+                    <li>Students are invited to utilize the food bank once a week during designated operational
+                        hours, as outlined on the provided page. Please note that these hours may be subject to
+                        change.</li>
+                    <li>To optimize efficiency and minimize wait times, appointments can be scheduled through the
+                        designated page. However, walk-ins remain accommodated.</li>
+                    <li>Each visitor is allocated a 10-minute shopping window. It is essential to adhere to the
+                        scheduled time, as tardiness will result in a proportional reduction in shopping duration. The
+                        number of students allowed within the facility simultaneously is limited.</li>
+                    <li>Students are permitted to acquire items that comfortably fit into a single bag.</li>
+                    <li>Access to the food bank is restricted to the individual who has made the appointment, and this
+                        service is exclusively available to current and continuing ASU students.</li>
+                    <li>It is recommended that visitors bring their reusable grocery bags for a sustainable shopping
+                        experience.</li>
+                    <li>Please exercise prudence in taking only what is necessary for the week, as the food bank is a
+                        communal resource intended for the benefit of the entire student community.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer mt-5 border-asu-gold" id="contact">
+        <div class="card-body">
+            <h5 class="card-text">Contact Us </h5>
+            <p class="card-text">Address: Apache Blvd, Tempe, Arizona, 85281. </p>
+            <p class="card-text">Hours: 9:00am - 4:00pm</p>
+            <p class="card-text">Email: asufb@asu.edu</p>
+            <p class="card-text">Phone: 999-555-1234</p>
+            <p class="card-text"><small class="text-body-secondary">ASU Food Bank 2024</small></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
